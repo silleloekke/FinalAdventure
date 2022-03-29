@@ -9,13 +9,13 @@ public class Room {
     private Room East;
     private Room West;
     private boolean roomHasSeen;
-    private ArrayList roomInventory = new ArrayList<>();
+    private ArrayList<Item> roomInventory = new ArrayList<>();
 
     public Room(String name, String description) {
         this.name = name;
         this.description = description;
         this.roomHasSeen = false;
-        ArrayList<Item> Inventory = null;
+
     }
 
     //getters and setters for name and description
@@ -88,11 +88,7 @@ public class Room {
         this.roomHasSeen = roomHasSeen;
     }
 
-   public void setRoomInventory(Item item) {
-        //this.roomInventory = item;
-        roomInventory.add(item);
 
-    }
     public void addItem(Item item){
         roomInventory.add(item);
     }

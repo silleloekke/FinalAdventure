@@ -36,7 +36,7 @@ public class Item {
     }
 
     public String toString(){
-        return "This is the item in the room: " + ItemName + " - " + ItemLongName;
+        return  ItemName + " - " + ItemLongName;
     }
 
 }

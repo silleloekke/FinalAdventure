@@ -3,19 +3,11 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Main obj = new Main();
-        obj.start();
+        Game game = new Game();
+        game.setup();
+        game.startGame();
     }
-    public void start(){
-        Map map = new Map();
-        map.GameMap();
-        UserInterface userInterface = new UserInterface();
-        userInterface.PreGameIntroduction();
-        userInterface.introduction();
-        Player player = new Player(map.newPlayerStand(),map.newItemLocation());
-        player.startGame();
-        //Item item = new Item();
-    }
+
 }
 
 
